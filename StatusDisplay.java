@@ -53,7 +53,7 @@ public class StatusDisplay extends JPanel {
         }
 	/*IF LANDER IS NOT FLYING SHOW CRASHED TEXT AND RED IMAGE*/
         else{
-            feedback.setText("Lander Crashed");
+            feedback.setText("CRASH LANDING!");
             status.setIcon(red);
         }
     }

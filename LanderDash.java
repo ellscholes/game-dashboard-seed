@@ -50,7 +50,7 @@ public class LanderDash extends JFrame implements Runnable {
         add(altitudeDisplay);
         add(velocityDisplay);
         add(fuelDisplay);
-	add( connection ) ;
+	add( connection );
 
         pack();
         setVisible(true);
@@ -116,7 +116,7 @@ public class LanderDash extends JFrame implements Runnable {
                         }
                     
                 
-                try{Thread.sleep(100);}catch(InterruptedException e){}
+                try{Thread.sleep(1);}catch(InterruptedException e){}
             }
             }
         

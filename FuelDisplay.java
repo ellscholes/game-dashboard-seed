@@ -54,17 +54,17 @@ public class FuelDisplay extends JPanel {
 	/*IF FUEL IS BETWEEN 70-100, IMAGE GREEN AND SHOW THE PERCENTAGE*/
         if (percent <= 100.00 && percent >= 70.00 && fly == true){
             status.setIcon(green);
-	    /*percentBox.setText(percent);*/
+	   
         }
 	/*IF FUEL IS BETWEEN 30-70, IMAGE ORANGE AND SHOW THE PERCENTAGE*/
         else if (percent <= 69.99 && percent >= 30.00 && fly == true ){
             status.setIcon(orange);
-	    /*percentBox.setText(percent);*/
+	   
         }
 	/*IF FUEL IS BETWEEN 0-30, IMAGE RED AND SHOW THE PERCENTAGE*/
         else if (percent <= 29.99 && percent >= 0 && fly == true){
             status.setIcon(red);
-	    /*percentBox.setText(percent);*/
+	  
         }
 	/*LANDER NOT IN FLIGHT SHOW CRASH TEXT*/
         else if (fly == false){
