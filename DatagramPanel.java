@@ -16,13 +16,13 @@ public class DatagramPanel extends JPanel {
 
     public DatagramPanel() {
         /* create a JPanel populated with border and text fields */
-        super( new FlowLayout( FlowLayout.LEFT, 5, 0));
+        super( new FlowLayout( FlowLayout.LEFT, 20, 10));
         setBorder( BorderFactory.createTitledBorder("Socket Address"));
-        add(new JLabel("IP:"));
-        addressname = new JTextField(10);
+        add(new JLabel("IP:        "));
+        addressname = new JTextField(15);
         add(this.addressname);
-        add(new JLabel("port:"));
-        port = new JTextField(5);
+        add(new JLabel("Port:      "));
+        port = new JTextField(15);
         add(this.port);
     }
     void setAddress(InetSocketAddress where){

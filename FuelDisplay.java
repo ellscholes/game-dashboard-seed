@@ -18,7 +18,7 @@ public class FuelDisplay extends JPanel {
         /* TODO apply layout manager,
                 add GUI elements to Panel,
         */
-        super( new FlowLayout( FlowLayout.LEFT, 5, 2));
+        super( new FlowLayout( FlowLayout.LEFT, 20, 10));
         /*CREATE BORDER AND TITLE NAME*/
         setBorder( BorderFactory.createTitledBorder("Current Fuel % "));
         
@@ -30,11 +30,11 @@ public class FuelDisplay extends JPanel {
         
 	/*CREATE TITLE FOR LABEL*/
         title = new JLabel();
-        title.setText("Fuel: ");
+        title.setText("Fuel:     ");
         add(title);
        
 	/*CREATE AND ADD TEXT BOX ALONGSIDE FOR FUEL DISPLAY*/
-        percentBox =  new JTextField(20);
+        percentBox =  new JTextField(15);
         percentBox.setEditable(false);
         add(percentBox);
         

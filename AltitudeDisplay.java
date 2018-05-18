@@ -18,7 +18,7 @@ public class AltitudeDisplay extends JPanel {
         /* TODO apply layout manager,
                 add GUI elements to Panel,
         */
-        super( new FlowLayout( FlowLayout.LEFT, 5, 2));
+        super( new FlowLayout( FlowLayout.LEFT, 20, 10));
 	/*CREATE BORDER AND TITLE NAME*/
         setBorder( BorderFactory.createTitledBorder("Current Altitude"));
         
@@ -30,11 +30,11 @@ public class AltitudeDisplay extends JPanel {
         
 	/*CREATE TITLE FOR LABEL*/
         title = new JLabel();
-        title.setText("Alt: ");
+        title.setText("Alt:        ");
         add(title);
         
 	/*CREATE AND ADD TEXT BOX ALONGSIDE FOR ALT DISPLAY*/
-        altBox =  new JTextField(20);
+        altBox =  new JTextField(15);
         altBox.setEditable(false);
         add(altBox);
         

@@ -18,7 +18,7 @@ public class StatusDisplay extends JPanel {
  	/* TODO apply layout manager,
                 add GUI elements to Panel,
         */
-        super( new FlowLayout( FlowLayout.LEFT, 5, 2));
+        super( new FlowLayout( FlowLayout.LEFT, 20, 10));
 	/*CREATE BORDER AND TITLE NAME*/
         setBorder( BorderFactory.createTitledBorder("Current Status"));
 
@@ -33,7 +33,7 @@ public class StatusDisplay extends JPanel {
         add(title);
 
 	/*CREATE AND ADD TEXT BOX ALONGSIDE FOR STATUS DISPLAY*/
-        feedback =  new JTextField(20);
+        feedback =  new JTextField(15);
         feedback.setEditable(false);
         add(feedback);
 

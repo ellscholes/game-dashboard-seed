@@ -18,27 +18,27 @@ public class VelocityDisplay extends JPanel {
         /* TODO apply layout manager,
                 add GUI elements to Panel,
         */
-        super( new FlowLayout( FlowLayout.LEFT, 5, 2));
+        super( new FlowLayout( FlowLayout.LEFT, 20, 10));
         /*CREATE BORDER AND TITLE NAME*/
         setBorder( BorderFactory.createTitledBorder("Current Velocity "));
         
 	/*CREATE TITLE FOR LABEL*/
         vX = new JLabel();
-        vX.setText("Vx: ");
+        vX.setText("Vx:        ");
         add(vX);
         
 	/*CREATE AND ADD FIELD DISPLAYING VELOCITY X AXIS*/
-        vXBox =  new JTextField(20);
+        vXBox =  new JTextField(15);
         vXBox.setEditable(false);
         add(vXBox);
         
 	/*CREATE TITLE FOR LABEL*/
         vY = new JLabel();
-        vY.setText("Vy: ");
+        vY.setText("Vy:        ");
         add(vY);
         
 	/*CREATE AND ADD FIELD DISPLAYING VELOCITY Y AXIS*/
-        vYBox =  new JTextField(20);
+        vYBox =  new JTextField(15);
         vYBox.setEditable(false);
         add(vYBox);
     }

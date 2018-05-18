@@ -39,17 +39,18 @@ public class LanderDash extends JFrame implements Runnable {
     public LanderDash(){
         super("Lunar Lander Dashboard");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        getContentPane().setLayout(
+        getContentPane().setBackground(Color.black);
+	getContentPane().setLayout(
             new BoxLayout(getContentPane(),BoxLayout.Y_AXIS) );
-        
+	
         fuel = 0;
         alt = 0;
         
  	/* TODO add pannels to window */
         add(statusDisplay);
         add(altitudeDisplay);
+	add(fuelDisplay);
         add(velocityDisplay);
-        add(fuelDisplay);
 	add( connection );
 
         pack();
